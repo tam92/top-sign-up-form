@@ -1,30 +1,107 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 .container {
+    background-color: azure;
     height: 100vh;
     width: 100vw;
+
     display: flex;
     flex-direction: row;
 }
 
-.background-image {
+/* ------------------ */
+/* --- LEFT PANEL --- */
+.left-panel {
     background: url(images/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
+    background-position: center;
+    background-size: 100vh;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    width: 50%;
-    overflow: hidden;
+    width: 30vw;
+    overflow:visible;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.sign-up {
-    background-color: antiquewhite;
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 25%);
 }
+
+div img {
+    height: 200px;
+    padding: 1em;
+}
+
+.logo h1 {
+    color: azure;
+    font-size: 4em;
+}
+
+.credit {
+    display: flex;
+    align-self: center;
+    padding: 1em 0;
+    color: azure;
+}
+
+/* ------------------ */
+/* --- RIGHT PANEL --- */
+.right-panel {
+    background-color: azure;
+    width: 70vw;
+    padding: 5% 10%;
+    font-size: 1.2em;
+    color: rgb(50, 0, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow:auto;
+}
+
+.form {
+    align-self: center;
+}
+
+fieldset {
+    margin: 2em 0;
+    border: thick double rgb(50, 0, 80);
+    padding: 1em;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+    background-color: azure;
+}
+
+input:invalid {
+    border: 2px solid darkred;
+}
+
+input[type="submit"] {
+    color: rgb(50, 0, 80);
+    border: 2px solid rgb(50, 0, 80);
+    background-color: azure;
+    padding: 0.5em 2em;
+    font-size: 1.1em;
+}
+
 
 ul {
-    list-style-type: none;
-    padding: 2em;
+    list-style: none;
 }

@@ -12,12 +12,20 @@
 <body>
     <div class="container">
 
-        <div class="background-image">
-            <div id="hero-image"></div>
+        <div class="left-panel">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="Logo">
+                <h1>Odin Island</h1>
+            </div>
+            <div class="credit">
+                <p>Image by Adam Birkett on <a href="https://unsplash.com/photos/75EFpyXu3Wg">Unsplash</a></p>
+            </div>
         </div>
 
-        <div class="sign-up">
-            <div class="intro">
+        <div class="right-panel">
+
+            <div id="form" class="right-panel-row1">
+
                 <p>This is not a real online service! You know you need something
                     like this in real life to help you realize your deepest dreams.
                     Sign up <em>now</em> to get started.
@@ -25,16 +33,14 @@
                 <br>
                 <p>You <em>know</em> you want to.</p>
                 <br>
-            </div>
-            <div class="form">
-                <form>
-                    <h1>Let's do this!</h1>
+                <h1>Let's do this!</h1>
 
+                <form action="get">
                     <fieldset>
                         <ul>
                             <li>
                                 <label for="first-name">First name</label>
-                                <input type="text" name="" id="first-name">
+                                <input type="text" name="first-name" id="first-name">
                             </li>
                             <li>
                                 <label for="last-name">Last name</label>
@@ -58,20 +64,12 @@
                             </li>
                         </ul>
                     </fieldset>
-
-
+                    <input type="submit" value="Create Account">
+                    <br>
+                    <p>Already have an account? <a href="https://github.com/tam92/">Log in</a></p>
                 </form>
             </div>
-            <div class="footer">
-                <input type="submit" value="Create Account">
-                <br>
-                <p>Already have an account? <a href="https://github.com/tam92/">Log in</a></p>
-            </div>
-
         </div>
-
-
-
     </div>
 </body>
 
